@@ -100,9 +100,20 @@ h1 {
     }
 
     &.active {
-        display: block;
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        right: 0;
+        width: 200px;
+        right:37px;
+        top: 110px;
+        background: rebeccapurple;
+        text-align: center;
+        height: 300px;
+        color: white;
+    }
+    & .navigation__items-link {
+        margin-top: 20px;
+        margin-left: 0;
     }
 
     & > * {
@@ -112,6 +123,11 @@ h1 {
     .navigation__items-link:nth-child(4),
     .navigation__items-link:nth-child(1) {
       margin-left: auto;
+
+      @media (max-width:768px) {
+          margin-left: 0px;
+          
+      }
     }
   }
 }

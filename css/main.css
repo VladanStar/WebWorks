@@ -130,9 +130,26 @@ h1 {
 }
 
 .navigation .navigation__items.active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
-  right: 0;
+  width: 200px;
+  right: 37px;
+  top: 110px;
+  background: rebeccapurple;
+  text-align: center;
+  height: 300px;
+  color: white;
+}
+
+.navigation .navigation__items .navigation__items-link {
+  margin-top: 20px;
+  margin-left: 0;
 }
 
 .navigation .navigation__items > * {
@@ -142,6 +159,13 @@ h1 {
 .navigation .navigation__items .navigation__items-link:nth-child(4),
 .navigation .navigation__items .navigation__items-link:nth-child(1) {
   margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .navigation .navigation__items .navigation__items-link:nth-child(4),
+  .navigation .navigation__items .navigation__items-link:nth-child(1) {
+    margin-left: 0px;
+  }
 }
 
 .hero {

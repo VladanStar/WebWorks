@@ -24,7 +24,7 @@
 
       <div class="navigation__logo">spance.</div>
       <span class="hamburger"></span>
-      <ul class="navigation__items active">
+      <ul class="navigation__items">
         <li class="navigation__items-link">Business</li>
         <li class="navigation__items-link">Pricing</li>
         <li class="navigation__items-link">Features</li>
@@ -60,6 +60,15 @@
     <section class="info__one">
 
     </section>
+    <script>
+        const hamb = document.querySelector('.hamburger');
+        const toggleMenu= ()=>{
+            document.querySelector('.navigation__items').classList.toggle('active')
+        }
+        hamb.addEventListener('click',toggleMenu);
+
+
+    </script>
 
   </body>
 </html>
