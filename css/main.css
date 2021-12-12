@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Poppins:wght@100;700&display=swap");
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
 * {
   margin: 0px;
   padding: opx;
@@ -86,5 +91,19 @@ p {
 
 .hero .hero__benefits p {
   margin-block: 2px;
+}
+
+.hero .hero__benefits p::before {
+  content: url("../Assets/Checkmark.svg");
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.hero .hero__benefits p::before input {
+  padding-block: 10px;
+  padding-left: 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
