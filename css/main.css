@@ -9,6 +9,14 @@ ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
+p {
+  margin: 10px auto;
+}
+
 .btn {
   background: #000;
   color: white;
@@ -30,10 +38,10 @@ ul {
 }
 
 .info__block {
+  margin: 0%;
   background: #000;
   color: white;
   text-align: center;
-  padding: 10px;
 }
 
 .navigation {
@@ -65,5 +73,18 @@ ul {
 .navigation .navigation__items .navigation__items-link:nth-child(4),
 .navigation .navigation__items .navigation__items-link:nth-child(1) {
   margin-left: auto;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero__benefits p {
+  margin-block: 2px;
 }
 /*# sourceMappingURL=main.css.map */

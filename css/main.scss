@@ -9,6 +9,13 @@
 ul {
   list-style: none;
 }
+img {
+    width: 100%;
+}
+p {
+    margin: 10px auto;
+}
+
 .btn {
     background: #000;
     color: white;
@@ -26,10 +33,11 @@ ul {
     }
 }
 .info__block {
+    margin: 0%;
   background: #000;
   color: white;
   text-align: center;
-  padding: 10px;
+//   padding: 10px;
 }
 
 .navigation {
@@ -40,7 +48,6 @@ ul {
   .navigation__logo {
     font-weight: bold;
   }
-
   .navigation__items {
     display: inherit;
     width: 100%;
@@ -56,3 +63,13 @@ ul {
     }
   }
 }
+.hero {
+    display: flex;
+    align-items: center;
+
+    .hero__benefits p {
+        margin-block: 2px;
+    }
+
+}
+
