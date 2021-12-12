@@ -16,6 +16,13 @@ img {
 p {
     margin: 10px auto;
 }
+h1 {
+    font-size: 45px;
+    @media (max-width:768px) {
+        font-size: 30px;
+        
+    }
+}
 
 .btn {
     background: #000;
@@ -42,6 +49,7 @@ p {
 }
 .main {
     background: #bd7aa1;
+    padding-bottom: 40px;
 }
 
 .navigation {
@@ -72,12 +80,23 @@ p {
 .hero {
     display: flex;
     align-items: center;
+
+    @media (max-width:768px) {
+        flex-wrap: wrap;
+        
+    }
     input {
         padding-top: 20px 20px;
         border:1px solid lightgray;
         border-radius: 5px;
         margin-right: 10px;
 
+    }
+    .hero__left {
+        @media (max-width:768px) {
+            order: 2;
+            
+        }
     }
 
     .hero__benefits p {

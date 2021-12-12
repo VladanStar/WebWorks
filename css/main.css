@@ -22,6 +22,16 @@ p {
   margin: 10px auto;
 }
 
+h1 {
+  font-size: 45px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
 .btn {
   background: #000;
   color: white;
@@ -51,6 +61,7 @@ p {
 
 .main {
   background: #bd7aa1;
+  padding-bottom: 40px;
 }
 
 .navigation {
@@ -95,11 +106,26 @@ p {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .hero input {
   padding-top: 20px 20px;
   border: 1px solid lightgray;
   border-radius: 5px;
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero .hero__left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .hero .hero__benefits p {
