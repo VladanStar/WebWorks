@@ -9,6 +9,22 @@
 ul {
   list-style: none;
 }
+.btn {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width768px){
+        width: 90%;
+    }
+}
 .info__block {
   background: #000;
   color: white;
