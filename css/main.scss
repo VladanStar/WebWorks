@@ -4,7 +4,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Poppins:wght@100;700&display=swap');
 * {
   margin: 0px;
-  padding: opx;
+  padding: 0px;
   box-sizing: border-box;
 }
 ul {
@@ -29,7 +29,7 @@ p {
     margin-left: auto;
     margin-right: auto;
 
-    @media (max-width768px){
+    @media (max-width:768px){
         width: 90%;
     }
 }
@@ -40,11 +40,16 @@ p {
   text-align: center;
 //   padding: 10px;
 }
+.main {
+    background: #bd7aa1;
+}
 
 .navigation {
   display: flex;
   align-items: center;
   margin: 15px auto;
+  margin-top: 0px;
+  padding-top: 20px;
 
   .navigation__logo {
     font-weight: bold;
@@ -67,6 +72,13 @@ p {
 .hero {
     display: flex;
     align-items: center;
+    input {
+        padding-top: 20px 20px;
+        border:1px solid lightgray;
+        border-radius: 5px;
+        margin-right: 10px;
+
+    }
 
     .hero__benefits p {
         margin-block: 2px;
@@ -76,16 +88,25 @@ p {
             padding-right: 10px;
             vertical-align: top;
 
-            input {
-                padding-block: 10px;
-                padding-left: 20px;
-                border:1px solid lightgray;
-                border-radius: 5px;
-                margin-right: 10px;
-
-            }
+         
         }
     }
 
+}
+.logos {
+  display: flex;  
+  justify-content: space-between;
+
+  img {
+      height: 25px;
+      margin: 40px;
+      width: auto;
+  }
+
+  @media (max-width:768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      
+  }
 }
 

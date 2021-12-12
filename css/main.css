@@ -5,7 +5,7 @@ body {
 
 * {
   margin: 0px;
-  padding: opx;
+  padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -36,7 +36,7 @@ p {
   margin-right: auto;
 }
 
-@media (max-width768px) {
+@media (max-width: 768px) {
   .container {
     width: 90%;
   }
@@ -49,6 +49,10 @@ p {
   text-align: center;
 }
 
+.main {
+  background: #bd7aa1;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,6 +61,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   margin: 15px auto;
+  margin-top: 0px;
+  padding-top: 20px;
 }
 
 .navigation .navigation__logo {
@@ -89,6 +95,13 @@ p {
           align-items: center;
 }
 
+.hero input {
+  padding-top: 20px 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
 .hero .hero__benefits p {
   margin-block: 2px;
 }
@@ -99,11 +112,28 @@ p {
   vertical-align: top;
 }
 
-.hero .hero__benefits p::before input {
-  padding-block: 10px;
-  padding-left: 20px;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  margin-right: 10px;
+.logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logos img {
+  height: 25px;
+  margin: 40px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
