@@ -33,6 +33,7 @@ ul {
   background: #000;
   color: white;
   text-align: center;
+  padding: 10px;
 }
 
 .navigation {
@@ -52,6 +53,9 @@ ul {
 .navigation .navigation__items {
   display: inherit;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation .navigation__items > * {

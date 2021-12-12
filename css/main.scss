@@ -29,6 +29,7 @@ ul {
   background: #000;
   color: white;
   text-align: center;
+  padding: 10px;
 }
 
 .navigation {
@@ -43,6 +44,7 @@ ul {
   .navigation__items {
     display: inherit;
     width: 100%;
+    align-items: center;
 
     & > * {
       margin-left: 30px;
