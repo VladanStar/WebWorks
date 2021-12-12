@@ -33,6 +33,8 @@ ul {
 
 .navigation {
   display: flex;
+  align-items: center;
+  margin: 15px auto;
 
   .navigation__logo {
     font-weight: bold;
