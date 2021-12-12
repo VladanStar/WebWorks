@@ -76,6 +76,41 @@ h1 {
   padding-top: 20px;
 }
 
+@media (max-width: 768px) {
+  .navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.navigation .hamburger {
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .navigation .hamburger {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 24px;
+            flex: 0 0 24px;
+    display: block;
+    height: 3px;
+    background: #000;
+  }
+  .navigation .hamburger::before, .navigation .hamburger::after {
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    background: inherit;
+    top: 6px;
+  }
+  .navigation .hamburger::after {
+    top: -6px;
+  }
+}
+
 .navigation .navigation__logo {
   font-weight: bold;
 }
@@ -86,6 +121,18 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navigation .navigation__items {
+    display: none;
+  }
+}
+
+.navigation .navigation__items.active {
+  display: block;
+  position: absolute;
+  right: 0;
 }
 
 .navigation .navigation__items > * {

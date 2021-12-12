@@ -59,6 +59,34 @@ h1 {
   margin-top: 0px;
   padding-top: 20px;
 
+  @media (max-width:768px) {
+      justify-content: space-between;
+      
+  }
+
+  .hamburger {
+    display: none;
+    position: relative;
+
+    @media (max-width:768px) {
+        flex: 0 0 24px;
+        display: block;
+        height: 3px;
+        background: #000;
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            height: inherit;
+            width: 100%;
+            background: inherit;
+            top: 6px;
+        }
+        &::after {
+            top: -6px;
+        }
+    }
+  }
   .navigation__logo {
     font-weight: bold;
   }
@@ -66,6 +94,16 @@ h1 {
     display: inherit;
     width: 100%;
     align-items: center;
+    @media (max-width:768px) {
+        display: none;
+        
+    }
+
+    &.active {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
 
     & > * {
       margin-left: 30px;
@@ -124,8 +162,10 @@ h1 {
 
   @media (max-width:768px) {
       flex-wrap: wrap;
-      justify-content: center;
-      
+
+      justify-content: center;    
   }
+
+
 }
 
